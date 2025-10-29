@@ -1,0 +1,65 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #70010c;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+header {
+  background-color: #4a0108;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 40px;
+  margin: 20px;
+  background-color: #4a0108;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #ffffff;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills li {
+  background: #4a0108;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #4a0108;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
