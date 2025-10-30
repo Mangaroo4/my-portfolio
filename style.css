@@ -110,3 +110,42 @@ h2 {
   object-fit: cover;    /* Ensure it fills container nicely */
 }
 
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr; /* one image per row */
+  }
+
+  .project img {
+    width: 90%;         /* smaller width */
+    height: 200px;      /* shorter height */
+    margin: 0 auto;     /* center the image */
+  }
+
+  .project {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on PC */
+  }
+
+  .project img {
+    height: 300px;      /* taller images */
+    width: 100%;        /* fill container */
+  }
+
+  .project {
+    padding: 20px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, li{
+  user-select: none;
+}
+
+.clickable-icon {
+  cursor: pointer;
+}
+
