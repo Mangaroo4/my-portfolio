@@ -177,7 +177,7 @@ nav {
   text-align: center;
 }
 
-nav a {
+nav a { 
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -195,4 +195,13 @@ nav a:hover {
 nav a.active {
   background-color: #ff4b5c;
   font-weight: bold;
+}
+
+ /* Profile image styling */
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;  /* keeps the image from stretching */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* optional: adds soft shadow */
 }
