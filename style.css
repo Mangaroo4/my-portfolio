@@ -51,7 +51,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* center vertically if needed */
+  justify-content: center;
+  /* center vertically if needed */
   text-align: center;
   padding: 40px 16px;
 }
@@ -62,7 +63,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px; /* <-- this adds equal left-right space between icons */
+  gap: 25px;
+  /* <-- this adds equal left-right space between icons */
 }
 
 /* circle button style for icons */
@@ -74,21 +76,24 @@ h2 {
   justify-content: center;
   border-radius: 50%;
   text-decoration: none;
-  color: #ffffff; /* white icon color */
+  color: #ffffff;
+  /* white icon color */
   background: rgba(255, 255, 255, 0.1);
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .social-icons a:hover {
   transform: translateY(-3px);
-  background: #ff4757; /* red hover color */
+  background: #ff4757;
+  /* red hover color */
 }
 
 /* make SVGs fit nicely */
 .social-icons svg {
   width: 24px;
   height: 24px;
-  padding: 0; /* ❌ remove big padding */
+  padding: 0;
+  /* ❌ remove big padding */
 }
 
 .project {
@@ -104,21 +109,28 @@ h2 {
 }
 
 .project img {
-  width: 50%;          /* Make image responsive */
-  height: auto;         /* Keep aspect ratio */
+  width: 50%;
+  /* Make image responsive */
+  height: auto;
+  /* Keep aspect ratio */
   border-radius: 8px;
-  object-fit: cover;    /* Ensure it fills container nicely */
+  object-fit: cover;
+  /* Ensure it fills container nicely */
 }
 
 @media (max-width: 600px) {
   .projects {
-    grid-template-columns: 1fr; /* one image per row */
+    grid-template-columns: 1fr;
+    /* one image per row */
   }
 
   .project img {
-    width: 90%;         /* smaller width */
-    height: 200px;      /* shorter height */
-    margin: 0 auto;     /* center the image */
+    width: 90%;
+    /* smaller width */
+    height: 200px;
+    /* shorter height */
+    margin: 0 auto;
+    /* center the image */
   }
 
   .project {
@@ -128,12 +140,15 @@ h2 {
 
 @media (min-width: 1024px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on PC */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns on PC */
   }
 
   .project img {
-    height: 300px;      /* taller images */
-    width: 100%;        /* fill container */
+    height: 300px;
+    /* taller images */
+    width: 100%;
+    /* fill container */
   }
 
   .project {
@@ -141,7 +156,14 @@ h2 {
   }
 }
 
-h1, h2, h3, h4, h5, h6, p, li{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
   user-select: none;
 }
 
@@ -149,3 +171,28 @@ h1, h2, h3, h4, h5, h6, p, li{
   cursor: pointer;
 }
 
+nav {
+  background-color: #4a0108;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #70010c;
+}
+
+/* This is the selected (active) one */
+nav a.active {
+  background-color: #ff4b5c;
+  font-weight: bold;
+}
